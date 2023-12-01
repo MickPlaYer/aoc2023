@@ -54,7 +54,6 @@ pub fn process_part2(content: String) -> Option<usize> {
                 "enin" => '9',
                 _ => back.chars().nth(0).unwrap(),
             };
-            dbg!(line, front, back);
             [front, back].iter().collect::<String>().parse().unwrap()
         })
         .collect();
