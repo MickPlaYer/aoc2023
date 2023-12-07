@@ -45,8 +45,8 @@ fn file_path(day_num: usize, file_name: &str) -> String {
     let root = env::current_dir().unwrap();
     let root = root.parent().unwrap();
     let binding = root
-        .join("files")
         .join(format!("day{}", day_num))
+        .join("files")
         .join(file_name);
     String::from(binding.to_str().unwrap())
 }

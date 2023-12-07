@@ -52,7 +52,7 @@ fn add_shared_dependency(options: &Options) {
 }
 
 fn create_sample_and_input(options: &Options) {
-    let dir_name = format!("files/{}", &options.get_day());
+    let dir_name = format!("{}/files", &options.get_day());
     fs::create_dir(&dir_name)
         .unwrap_or_else(|err| panic!("failed to create dir {}({})", &dir_name, err));
     let file_name = format!("{}/sample.txt", &dir_name);
