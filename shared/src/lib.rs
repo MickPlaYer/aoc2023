@@ -5,7 +5,7 @@ use std::{
 };
 mod math;
 
-pub use math::lcm;
+pub use math::{lcm, lcm_n};
 
 pub fn read_file() -> String {
     let args: Vec<String> = env::args().collect();
