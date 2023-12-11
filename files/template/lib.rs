@@ -1,8 +1,8 @@
-pub fn process_part1(content: String) -> Option<usize> {
+pub fn process_part1(input: String) -> Option<usize> {
     None
 }
 
-pub fn process_part2(content: String) -> Option<usize> {
+pub fn process_part2(input: String) -> Option<usize> {
     None
 }
 
