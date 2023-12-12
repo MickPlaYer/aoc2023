@@ -1,6 +1,7 @@
 [workspace]
 resolver = "2"
 members = [
+    "day12",
     "day11",
     "day10",
     "day9",
@@ -20,6 +21,6 @@ members = [
 # # optimization over all codebase ( better optimization, slower build )
 # codegen-units = 1
 # # optimization for size ( more aggressive )
-# opt-level = 'z'
+# opt-level = 3
 # # link time optimization using using whole-program analysis
 # lto = true
