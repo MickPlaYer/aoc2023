@@ -64,9 +64,9 @@ fn create_sample_and_input(options: &Options) {
 }
 
 fn copy_template(options: &Options) {
-    let template_path = "files/template/lib.rs";
+    let template_path = "script/templates/lib.rs";
     let target_path = format!("{}/src/lib.rs", &options.get_day());
-    fs::copy(template_path, target_path).expect("Can not copy files/template/lib.rs !");
+    fs::copy(template_path, target_path).expect(&format!("Can not copy {}!", template_path));
 }
 
 fn insert_new_line_after(cargo_file: &str, insert_after: &str, new_line: &str) {
