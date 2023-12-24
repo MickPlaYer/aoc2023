@@ -4,8 +4,7 @@ use std::{
     io::Write,
 };
 mod math;
-
-pub use math::{lcm, lcm_n};
+pub use math::{gcd, lcm, lcm_n};
 
 pub fn read_file() -> String {
     let args: Vec<String> = env::args().collect();
